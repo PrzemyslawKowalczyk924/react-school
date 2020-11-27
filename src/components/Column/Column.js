@@ -13,6 +13,9 @@ class Column extends React.Component {
     static propTypes = {
         title: PropTypes.node,
     };
+    static defaultProps = {
+        icon: settings.defaultColumnIcon,
+      };
     addCard(title){
         this.setState(state => (
           {
@@ -32,7 +35,9 @@ class Column extends React.Component {
         return (
             <section className={styles.component}>
                 <h3 className={styles.title}>
-                    <span className={styles.icon}><Icon className={listData.columns.icon}/></span> 
+                    <span className={styles.icon}>
+                        <Icon name={this.props.icon}/>
+                    </span> 
                     {this.props.title}
                 </h3>
                 <Card titleText={this.props.title}/>
