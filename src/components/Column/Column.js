@@ -43,7 +43,6 @@ class Column extends React.Component {
                     </span> 
                     {this.props.title}
                 </h3>
-                {/*<Card titleText={this.props.title}/>*/}
                 <div className={styles.cards}>
                     {this.state.cards.map(({key, ...cardProps}) => (
                         <Card key={key} {...cardProps} />
