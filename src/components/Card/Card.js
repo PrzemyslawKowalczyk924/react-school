@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
 class Card extends React.Component {
-    static propTypes = {
-        title: PropTypes.node,
-    };
-    render() {
-        return (
-            <section className={styles.component}>
-                <h4 className={styles.title}>{ReactHtmlParser(this.props.title)}</h4>
-            </section>
-        )
-    }
+  static propTypes = {
+    title: PropTypes.node,
+  };
+  render() {
+    return (
+      <section className={styles.component}>
+        <h4 className={styles.title}>{ReactHtmlParser(this.props.title)}</h4>
+      </section>
+    );
+  }
 }
 
 export default Card;
