@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from '../Hero/Hero.js';
+import Hero from '../Hero/Hero';
 import styles from './List.scss';
 import PropTypes from 'prop-types';
-import Column from '../Column/ColumnContainer.js';
+import Column from '../Column/ColumnContainer';
 import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
