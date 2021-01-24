@@ -21,7 +21,7 @@ class App extends React.Component {
         </div>
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
-        ))};
+        ))}
       </main>
     );
   }
