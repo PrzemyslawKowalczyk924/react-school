@@ -10,10 +10,6 @@ import {withRouter} from 'react-router';
 class Search extends React.Component {
   static propTypes = {
     text: PropTypes.string,
-    searchString: PropTypes.string,
-    changeSearchString: PropTypes.func,
-    countVisible: PropTypes.number,
-    countAll: PropTypes.number,
     history: PropTypes.object,
   }
 
@@ -22,7 +18,7 @@ class Search extends React.Component {
   }
 
   state = {
-    value: this.props.searchString,
+    value: '',
   }
 
   handleChange(event){
@@ -36,14 +32,8 @@ class Search extends React.Component {
     this.props.history.push(`/search/${this.state.value}`);
   }
 
-  componentDidUpdate(prevProps){
-    if(this.props.searchString != prevProps.searchString){
-      this.setState({value: this.props.searchString});
-    }
-  }
-
   render() {
-    const {text, countVisible, countAll} = this.props;
+    const {text} = this.props;
     const {value} = this.state;
     const {icon} = settings.search;
     return (
@@ -57,9 +47,6 @@ class Search extends React.Component {
           />
           <div className={styles.buttons}>
             <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
-          </div>
-          <div>
-            { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
           </div>
         </div>
       </Container>
