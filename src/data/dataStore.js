@@ -82,6 +82,30 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Duties <sup> for every day</sup>',
+    description: 'Thinhs i need to do!',
+    image: 'https://cdn3.vectorstock.com/i/1000x1000/46/87/space-seamless-pattern-print-design-vector-31994687.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Upcoming event <sup> are you in?</sup>',
+    description: 'Check it out!',
+    image: 'https://static.vecteezy.com/system/resources/previews/001/110/375/non_2x/stars-and-planets-in-outer-space-vector.jpg',
+  },
+  {
+    id: 'list-4',
+    title: 'Dreams <sup> came true?</sup>',
+    description: 'Chalange for whole life!',
+    image: 'https://wallpaperaccess.com/full/269147.png',
+  },
+  {
+    id: 'list-5',
+    title: 'Last minute <sup> hurry up!</sup>',
+    description: 'Prepare!',
+    image: 'https://cdn4.vectorstock.com/i/1000x1000/39/73/cartoon-rocket-in-space-vector-21483973.jpg',
+  },
 ];
 
 const columns = [
